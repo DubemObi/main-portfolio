@@ -48,7 +48,7 @@ class Home extends React.Component {
             <h1 id="main-text">
               I <span id="create-text">create</span> awesome digital products
             </h1>
-            <p>
+            <p id="smaller-text">
               An experienced software developer skilled in React.js with a
               strong analytical mindset and problem-solving abilities.
             </p>
