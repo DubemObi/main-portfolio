@@ -884,25 +884,7 @@ body {
   #header > h2 {
     font-size: 1rem;
   }
-  /* 
-  #nav-links {
-    width: 225px;
-  }
 
-  #nav-links a {
-    font-size: 1rem;
-    width: 75px;
-  }
-  #about-content {
-    height: 245px;
-  }
-  #about {
-    height: 360px;
-  }
-
-  #about-div {
-    height: 270px;
-  } */
   #passportImg {
     width: 30px;
     height: 30px;
@@ -972,7 +954,7 @@ body {
     margin-top: 70px;
     background-color: var(--black-color);
     background-image: url("/src/img/shubham-dhage-jBBRDWsT2Bs-unsplash.jpg");
-    background-position-x: -25px;
+    background-position-x: -150px;
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 70px);
