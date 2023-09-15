@@ -14,6 +14,8 @@ import {
   faPhone,
   faEnvelope,
   faArrowRight,
+  faBars,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import passportImg from "../img/IMG-20190509-WA0045 Passport.jpg";
@@ -21,10 +23,60 @@ import passportImg from "../img/IMG-20190509-WA0045 Passport.jpg";
 class Home extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isMenu: false,
+    };
+    this.handleMenu = this.handleMenu.bind(this);
   }
+  handleMenu() {
+    this.setState((state) => {
+      if (!state.isMenu) {
+        return { isMenu: true };
+      } else {
+        return { isMenu: false };
+      }
+    });
+  }
+
   render() {
+    const menuBar = (
+      <div id="full-menubar">
+        <div id="menubar">
+          <FontAwesomeIcon
+            icon={faXmark}
+            id="menubar-icon"
+            onClick={this.handleMenu}
+          />
+          <ul id="new-nav-links">
+            <a href="#hero" onClick={this.handleMenu}>
+              <li>Home</li>
+            </a>
+            <a href="#projects" onClick={this.handleMenu}>
+              <li>Projects</li>
+            </a>
+            <a href="#contact" onClick={this.handleMenu}>
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div id="behind-menubar" onClick={this.handleMenu}></div>
+      </div>
+    );
     return (
       <div>
+        {this.state.isMenu ? menuBar : !menuBar}
+        <nav id="navbar-phone">
+          <FontAwesomeIcon
+            icon={faBars}
+            id="nav-icon"
+            onClick={this.handleMenu}
+          />
+          <div id="header">
+            <h2>MY SPACE</h2>
+
+            <img src={passportImg} alt="" id="passportImg" />
+          </div>
+        </nav>
         <nav id="navbar">
           <div id="header">
             <img src={passportImg} alt="" id="passportImg" />
@@ -63,8 +115,8 @@ class Home extends React.Component {
             <h2 id="about-text">About me &#x1F4A1;</h2>
             <div id="about-content">
               <p>
-                Hi, I am Dubem, I'm an experienced software developer skilled in
-                React.js with a strong analytical mindset and problem-solving
+                Hi, I am Dubem, I'm an well-trained software developer skilled
+                in React.js with a strong analytical mindset and problem-solving
                 abilities. Proficient in front-end and back-end development, I
                 excel in translating complex concepts into user-friendly
                 software solutions.{" "}

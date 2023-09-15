@@ -44,6 +44,9 @@ body {
     position: fixed;
     top: 0;
   }
+  #navbar-phone {
+    display: none;
+  }
   #header {
     height: 100%;
     display: flex;
@@ -321,6 +324,9 @@ body {
     box-sizing: border-box;
     position: fixed;
     top: 0;
+  }
+  #navbar-phone {
+    display: none;
   }
 
   #header {
@@ -615,6 +621,9 @@ body {
     position: fixed;
     top: 0;
   }
+  #navbar-phone {
+    display: none;
+  }
   #header {
     height: 100%;
     display: flex;
@@ -892,10 +901,10 @@ body {
     border-radius: 50%;
     border: 2px solid var(--yellow-color);
     padding: 2.5px;
-    margin-right: 10px;
+    margin-left: 10px;
   }
 
-  #navbar {
+  #navbar-phone {
     background-color: var(--black-color);
     padding: 0 20px;
     /* padding-left: 40px; */
@@ -908,38 +917,67 @@ body {
     position: fixed;
     top: 0;
   }
+  #navbar {
+    display: none;
+  }
+
+  #nav-icon {
+    font-size: 1.4rem;
+  }
+
+  #full-menubar {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    /* display: none; */
+  }
+  #menubar {
+    height: 100vh;
+    width: 45vw;
+    background-color: var(--yellow-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    /* display: none; */
+  }
+  #menubar-icon {
+    font-size: 1.8rem;
+    color: var(--black-color);
+    float: right;
+    margin-right: 12px;
+    margin-top: 20px;
+  }
+  #new-nav-links {
+    margin-top: 70px;
+    padding-left: 0;
+    list-style: none;
+    border-top: 1px solid var(--purple-color);
+  }
+  #new-nav-links a {
+    text-decoration: none;
+  }
+  #new-nav-links li {
+    height: 40px;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    border-bottom: 1px solid var(--purple-color);
+    display: flex;
+    align-items: center;
+    color: var(--black-color);
+  }
+
+  #behind-menubar {
+    width: 100vw;
+    height: 100vh;
+    background-color: color-mix(in srgb, var(--black-color), transparent 50%);
+  }
   #header {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  #nav-links {
-    width: 195px;
-    padding-left: 0;
-    margin: 0;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #nav-links a {
-    text-align: center;
-    font-size: 0.9rem;
-    width: 65px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white-color);
-    text-decoration: none;
-  }
-
-  #nav-links li {
-    color: var(--white-color);
   }
 
   #nav-links a:active {
@@ -958,7 +996,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 70px);
-    width: 100vw;
+    width: 100%;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
