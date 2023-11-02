@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import barrel from "../img/Screenshot (82).png";
+import vizi from "../img/Screenshot (114).png";
 import landingPage from "../img/Screenshot (80).png";
 import magazinePage from "../img/Screenshot (81).png";
 import markdownPreviewer from "../img/Screenshot (83).png";
@@ -115,11 +115,11 @@ class Home extends React.Component {
             <h2 id="about-text">About me &#x1F4A1;</h2>
             <div id="about-content">
               <p>
-                Hi, I am Dubem, I'm an well-trained software developer skilled
-                in React.js with a strong analytical mindset and problem-solving
-                abilities. Proficient in front-end and back-end development, I
-                excel in translating complex concepts into user-friendly
-                software solutions.{" "}
+                Hi, I am Dubem, a well-trained software developer skilled in
+                React.js with a strong analytical mindset and problem-solving
+                abilities. I am proficient in front-end and back-end
+                development, I excel in translating complex concepts into
+                user-friendly software solutions.{" "}
               </p>
             </div>
           </div>
@@ -127,15 +127,23 @@ class Home extends React.Component {
         <section id="projects">
           <h1 id="projects-text">Projects</h1>
           <div id="project-div">
-            <a href="https://onboarding-webpage.vercel.app/" target="_blank">
+            <a
+              href="https://voting-app-psi-pearl.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div id="project-bag">
-                <img src={barrel} alt="barrel-page" />
+                <img src={vizi} alt="barrel-page" />
                 <div id="project-name">
-                  <p>Barrel Page</p>
+                  <p>Vizi Website</p>
                 </div>
               </div>
             </a>
-            <a href="https://dubemobi.github.io/magazine-grid/" target="_blank">
+            <a
+              href="https://dubemobi.github.io/magazine-grid/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div id="project-bag">
                 <img src={magazinePage} alt="magazine-page" />
                 <div id="project-name">
@@ -146,6 +154,7 @@ class Home extends React.Component {
             <a
               href="https://markdown-previewer-virid-mu.vercel.app/"
               target="_blank"
+              rel="noreferrer"
             >
               <div id="project-bag">
                 <img src={markdownPreviewer} alt="markdown-page" />
@@ -154,7 +163,11 @@ class Home extends React.Component {
                 </div>
               </div>
             </a>
-            <a href="https://dubemobi.github.io/landing-page/" target="_blank">
+            <a
+              href="https://dubemobi.github.io/landing-page/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div id="project-bag">
                 <img src={landingPage} alt="landing-page" />
                 <div id="project-name">
@@ -166,6 +179,7 @@ class Home extends React.Component {
           <a
             href="https://github.com/DubemObi?tab=repositories"
             target="_blank"
+            rel="noreferrer"
           >
             <button id="see-all">
               See all <FontAwesomeIcon icon={faArrowRight} id="see-all-arrow" />
@@ -189,16 +203,25 @@ class Home extends React.Component {
                 </p>
               </div>
               <div id="contact-links">
-                <a href="https://github.com/DubemObi/" target="_blank">
+                <a
+                  href="https://github.com/DubemObi/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/chidubem-obinwanne-0a113819a/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a href="https://twitter.com/dubem_ob" target="_blank">
+                <a
+                  href="https://twitter.com/dubem_ob"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </div>
