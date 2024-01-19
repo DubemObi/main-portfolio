@@ -19,6 +19,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import passportImg from "../img/IMG-20190509-WA0045 Passport.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 class Home extends React.Component {
   constructor(props) {
@@ -37,7 +40,6 @@ class Home extends React.Component {
       }
     });
   }
-
   render() {
     const menuBar = (
       <div id="full-menubar">
@@ -72,7 +74,7 @@ class Home extends React.Component {
             onClick={this.handleMenu}
           />
           <div id="header">
-            <h2>MY SPACE</h2>
+            <h2>WELCOME</h2>
 
             <img src={passportImg} alt="" id="passportImg" />
           </div>
@@ -81,7 +83,7 @@ class Home extends React.Component {
           <div id="header">
             <img src={passportImg} alt="" id="passportImg" />
 
-            <h2>MY SPACE</h2>
+            <h2>WELCOME</h2>
           </div>
           <ul id="nav-links">
             <a href="#hero">
@@ -97,27 +99,35 @@ class Home extends React.Component {
         </nav>
         <section id="hero">
           <div id="hero-div">
-            <h1 id="main-text">
+            <h1 id="main-text" data-aos="fade-right" data-aos-duration="1000">
               I <span id="create-text">create</span> awesome digital products
             </h1>
-            <p id="smaller-text">
+            <p id="smaller-text" data-aos="fade-right">
               An experienced software developer skilled in React.js with a
               strong analytical mindset and problem-solving abilities.
             </p>
             <a href=".contact">
-              <button id="hero-button">Get In Touch</button>
+              <button
+                id="hero-button"
+                data-aos="fade-up"
+                data-aos-duration="600"
+              >
+                Get In Touch
+              </button>
             </a>
           </div>
         </section>
         <section id="about">
           <div id="about-div">
             {/* <h2 id="about-text">About me 👨🏽‍💻</h2> */}
-            <h2 id="about-text">About me &#x1F4A1;</h2>
-            <div id="about-content">
+            <h2 id="about-text" data-aos="fade-right">
+              About me &#x1F4A1;
+            </h2>
+            <div id="about-content" data-aos="fade-left">
               <p>
                 Hi, I am Dubem, a well-trained software developer skilled in
                 React.js with a strong analytical mindset and problem-solving
-                abilities. I am proficient in front-end and back-end
+                abilities. I am proficient in front-end and back-end web
                 development, I excel in translating complex concepts into
                 user-friendly software solutions.{" "}
               </p>
@@ -132,7 +142,7 @@ class Home extends React.Component {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="project-bag">
+              <div id="project-bag" data-aos="zoom-in">
                 <img src={vizi} alt="barrel-page" />
                 <div id="project-name">
                   <p>Vizi Website</p>
@@ -144,7 +154,7 @@ class Home extends React.Component {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="project-bag">
+              <div id="project-bag" data-aos="zoom-in">
                 <img src={magazinePage} alt="magazine-page" />
                 <div id="project-name">
                   <p>Magazine Page</p>
@@ -156,7 +166,7 @@ class Home extends React.Component {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="project-bag">
+              <div id="project-bag" data-aos="zoom-in">
                 <img src={markdownPreviewer} alt="markdown-page" />
                 <div id="project-name">
                   <p>Markdown Previewer</p>
@@ -168,7 +178,7 @@ class Home extends React.Component {
               target="_blank"
               rel="noreferrer"
             >
-              <div id="project-bag">
+              <div id="project-bag" data-aos="zoom-in">
                 <img src={landingPage} alt="landing-page" />
                 <div id="project-name">
                   <p>Landing Page</p>
