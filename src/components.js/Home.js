@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import vizi from "../img/Screenshot (114).png";
 import landingPage from "../img/Screenshot (80).png";
-import magazinePage from "../img/Screenshot (81).png";
+import nexcent from "../img/Screenshot (133).png";
 import markdownPreviewer from "../img/Screenshot (83).png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -150,14 +150,14 @@ class Home extends React.Component {
               </div>
             </a>
             <a
-              href="https://dubemobi.github.io/magazine-grid/"
+              href="https://nexcent-omega-ten.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
               <div id="project-bag" data-aos="zoom-in">
-                <img src={magazinePage} alt="magazine-page" />
+                <img src={nexcent} alt="nexcent" />
                 <div id="project-name">
-                  <p>Magazine Page</p>
+                  <p>Nexcent</p>
                 </div>
               </div>
             </a>
