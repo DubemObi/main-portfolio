@@ -109,6 +109,10 @@ body {
     color: var(--white-color);
   }
 
+  #nav-links li:hover {
+    color: var(--black-color);
+  }
+
   #nav-links a:hover {
     background-color: var(--yellow-color);
   }

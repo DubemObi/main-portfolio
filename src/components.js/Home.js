@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import vizi from "../img/Screenshot (114).png";
+import caseRadar from "../img/case-radar.png";
 import landingPage from "../img/Screenshot (80).png";
 import nexcent from "../img/Screenshot (133).png";
 import markdownPreviewer from "../img/Screenshot (83).png";
@@ -138,12 +139,24 @@ class Home extends React.Component {
           <h1 id="projects-text">Projects</h1>
           <div id="project-div">
             <a
+              href="https://www.caseradar.ai/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div id="project-bag" data-aos="zoom-in">
+                <img src={caseRadar} alt="case-radar webapp" />
+                <div id="project-name">
+                  <p>Case Radar</p>
+                </div>
+              </div>
+            </a>
+            <a
               href="https://voting-app-psi-pearl.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
               <div id="project-bag" data-aos="zoom-in">
-                <img src={vizi} alt="barrel-page" />
+                <img src={vizi} alt="vizi webpage" />
                 <div id="project-name">
                   <p>Vizi Website</p>
                 </div>
